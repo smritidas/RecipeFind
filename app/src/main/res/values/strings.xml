@@ -3,4 +3,5 @@
     <string name="title_browse">Browse</string>
     <string name="title_search">Search</string>
     <string name="title_bookmarks">Bookmarks</string>
+    <string name="enter_ingredients">Enter ingredients here</string>
 </resources>
