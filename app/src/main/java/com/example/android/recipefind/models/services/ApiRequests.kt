@@ -1,4 +1,6 @@
-package com.example.android.recipefind.services
+package com.example.android.recipefind.models.services
 
-class ApiRequests {
+interface ApiRequests {
+    // Request method and URL specified in the annotation
+
 }
