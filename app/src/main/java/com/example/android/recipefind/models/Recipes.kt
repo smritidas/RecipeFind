@@ -4,9 +4,8 @@ import com.google.gson.JsonObject
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
-//TODO should use generateAdapter?
+//TODO should use generateAdapter and serialized name?
 
-class Recipes {
 
     @JsonClass(generateAdapter = true)
     data class Hit (
@@ -70,4 +69,3 @@ class Recipes {
             val foodID: String
     )
 
-}
