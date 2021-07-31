@@ -14,4 +14,6 @@ object RetrofitClient {
                 .build()
                 .create(RecipeApiService::class.java)
     }
+
+    //TODO helper class?
 }

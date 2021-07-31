@@ -4,7 +4,7 @@ import com.google.gson.JsonObject
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
-//TODO should use generateAdapter and serialized name?
+//TODO should use (1) generateAdapter (2) serialized name?
 
 
     @JsonClass(generateAdapter = true)
