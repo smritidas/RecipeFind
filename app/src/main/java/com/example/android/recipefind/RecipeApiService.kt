@@ -9,5 +9,5 @@ import retrofit2.http.Query
 
 interface RecipeApiService {
     @GET("/search/?app_id=" + Constants.APP_ID + "&app_key=" + Constants.APP_KEY)
-    suspend fun getRecipe(): List<Recipe>
+    suspend fun getRecipe(): Response<List<Recipe>>
 }

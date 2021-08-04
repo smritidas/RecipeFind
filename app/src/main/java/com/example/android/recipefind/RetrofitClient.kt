@@ -16,5 +16,4 @@ object RetrofitClient {
     }
 
     //TODO helper class?
-    //TODO
 }
