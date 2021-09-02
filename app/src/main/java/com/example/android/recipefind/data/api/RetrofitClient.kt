@@ -1,4 +1,4 @@
-package com.example.android.recipefind
+package com.example.android.recipefind.data.api
 
 import com.example.android.recipefind.Constants.RECIPES_BASE_URL
 import retrofit2.Retrofit

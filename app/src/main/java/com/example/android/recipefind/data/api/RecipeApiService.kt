@@ -1,5 +1,6 @@
-package com.example.android.recipefind
+package com.example.android.recipefind.data.api
 
+import com.example.android.recipefind.Constants
 import com.example.android.recipefind.data.model.Recipe
 import retrofit2.Response
 import retrofit2.http.GET
