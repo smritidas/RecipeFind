@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
+//TODO check that all fragments are in correct order
 
 class MainActivity : AppCompatActivity() {
 
