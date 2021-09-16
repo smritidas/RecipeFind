@@ -1,7 +1,7 @@
 <resources>
     <!--TODO (2) organize by usecase -->
     <string name="app_name">RecipeFind</string>
-    <string name="app_title">Dinner Party</string>
+    <string name="app_title">Let's cook!</string>
     <string name="main_browse">Browse for ideas</string>
     <string name="search_ingredients">I have these ingredients</string>
     <string name="title_browse">Browse</string>

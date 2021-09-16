@@ -1,4 +1,4 @@
-package com.example.android.recipefind
+package com.example.android.recipefind.ui
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,6 +7,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.android.recipefind.R
+
 
 //TODO check that all fragments are in correct order
 
