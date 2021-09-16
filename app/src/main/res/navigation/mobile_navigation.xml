@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/mainActivity"
+        android:id="@+id/navigation_home"
         android:name="com.example.android.recipefind.ui.MainActivity"
         android:label="nav_host_fragment"
         tools:layout="@layout/nav_host_fragment" >
