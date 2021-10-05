@@ -1,4 +1,14 @@
 package com.example.android.recipefind.ui.browse
 
-class BrowseViewModel {
+import androidx.lifecycle.ViewModel
+import kotlin.reflect.KProperty
+
+/**
+ * Viewmodels don't contain references to the view
+ *
+ */
+
+class BrowseViewModel : ViewModel() {
+//retrofit gets called here
+
 }
