@@ -15,4 +15,13 @@
     <string name="ingredients">What you will need</string>
     <string name="Directions">How to make it</string>
     <string name="explore_ideas">Explore Ideas</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="starters">Starters</string>
+    <string name="main">Main</string>
+    <string name="dessert">Dessert</string>
+    <string name="indian">Indian</string>
+    <string name="italian">Italian</string>
+    <string name="chinese">Chinese</string>
 </resources>
