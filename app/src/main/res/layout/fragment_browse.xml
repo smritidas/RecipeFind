@@ -19,15 +19,18 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_breakfast"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/breakfast"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintEnd_toStartOf="@+id/btn_lunch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/browse_title" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_lunch"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lunch"
@@ -37,6 +40,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_dinner"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dinner"
@@ -46,15 +50,18 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_starters"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/starters"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintEnd_toStartOf="@+id/btn_main"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_breakfast" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_main"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main"
@@ -64,6 +71,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_dessert"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dessert"
@@ -73,15 +81,18 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_indian"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/indian"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintEnd_toStartOf="@+id/btn_italian"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_starters" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_italian"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/italian"
@@ -91,6 +102,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_chinese"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chinese"
