@@ -6,8 +6,10 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/fragment_bookmarks.xml" value="0.13994565217391305" />
         <entry key="app/src/main/res/layout/fragment_browse.xml" value="0.14221014492753623" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.8629032258064516" />
         <entry key="app/src/main/res/layout/fragment_saved.xml" value="0.12318840579710146" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.13994565217391305" />
+        <entry key="app/src/main/res/layout/nav_host_fragment.xml" value="0.8629032258064516" />
         <entry key="app/src/main/res/layout/recipe_detailview.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/recipe_listitem_rv.xml" value="0.1875" />
       </map>
