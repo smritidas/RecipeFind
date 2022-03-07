@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.recipefind.R
 
+//TODO code up the buttons to point to other fragments
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel

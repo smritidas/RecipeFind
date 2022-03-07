@@ -10,5 +10,8 @@ import kotlin.reflect.KProperty
 
 class BrowseViewModel : ViewModel() {
 //retrofit gets called here
+    //KTX co routine run time. Lifecycle viewmodel
+    //Coroutine view model
+    //error handling needs to be done here in MAIN REPO
 
 }
