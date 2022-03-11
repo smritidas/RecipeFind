@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    val api: RecipeApiService by lazy {
+    val recipesApi: RecipeApiService by lazy {
 
         Retrofit.Builder()
                 .baseUrl(RECIPES_BASE_URL)

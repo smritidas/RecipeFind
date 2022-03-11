@@ -11,6 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.android.recipefind.R
 
 //TODO code up the buttons to point to other fragments
+//TODO Splash screen
+
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
@@ -23,10 +25,18 @@ class HomeFragment : Fragment() {
         homeViewModel =
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_browse, container, false)
+
+
         val textView: TextView? = root.findViewById(R.id.text_home)
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView?.text = it
         })
         return root
     }
+
+    //button to navigate to ideas ie browse fragment
+
+    //button to navigate to search fragment
+    //button to navigate to bookmarks
+
 }
