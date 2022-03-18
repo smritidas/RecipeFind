@@ -11,13 +11,13 @@
         android:label="nav_host_fragment"
         tools:layout="@layout/nav_host_fragment" >
         <action
-            android:id="@+id/action_mainActivity_to_navigation_browse"
+            android:id="@+id/action_homeFragment_to_navigation_browse"
             app:destination="@id/navigation_browse" />
         <action
-            android:id="@+id/action_mainActivity_to_navigation_search"
+            android:id="@+id/action_homeFragment_to_navigation_search"
             app:destination="@id/navigation_search" />
         <action
-            android:id="@+id/action_mainActivity_to_navigation_bookmarks"
+            android:id="@+id/action_homeFragment_to_navigation_bookmarks"
             app:destination="@id/navigation_bookmarks" />
     </fragment>
 
