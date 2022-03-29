@@ -4,9 +4,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import com.google.gson.JsonObject
 
-//TODO should use (1) generateAdapter (2) serialized name?
-
-
 @JsonClass(generateAdapter = true)
 data class Hit (
     val recipe: Recipe,
