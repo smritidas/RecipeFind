@@ -15,14 +15,9 @@ import com.example.android.recipefind.R
 //TODO code up the buttons to point to other fragments
 //TODO Splash screen
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), View.OnClickListener{
 
     private lateinit var homeViewModel: HomeViewModel
-    private lateinit var browseButton : Button
-    private lateinit var searchButton : Button
-    private lateinit var bookmarksButton : Button
-
-    private var homeFragment : HomeFragment? = null
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -41,30 +36,31 @@ class HomeFragment : Fragment() {
             textView?.text = it
 
         })
+
+        //TODO ViewBinding
+        val browseButton = root.findViewById<Button>(R.id.tv_browse_ideas)
+        val searchButton = root.findViewById<Button>(R.id.tv_ingredient_search)
+        val bookmarksButton = root.findViewById<Button>(R.id.tv_saved_bookmarks)
+
+        browseButton.setOnClickListener(this)
+        searchButton.setOnClickListener(this)
+        bookmarksButton.setOnClickListener(this)
+
         return root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        navigateToBrowse()
-        navigateToSearch()
-        navigateToBookmarks()
-    }
-
-
-    private fun navigateToBrowse(){
-        browseButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_navigation_browse) }
-    }
-
-    private fun navigateToSearch(){
-        searchButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_navigation_search) }
-    }
-
-    private fun navigateToBookmarks(){
-        bookmarksButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_navigation_bookmarks) }
+    override fun onClick(view: View?) {
+        when(view?.id){
+            R.id.tv_browse_ideas -> {
+                findNavController().navigate(R.id.action_homeFragment_to_navigation_browse)
+            }
+            R.id.tv_ingredient_search -> {
+                findNavController().navigate(R.id.action_homeFragment_to_navigation_search)
+            }
+            R.id.tv_saved_bookmarks -> {
+                findNavController().navigate(R.id.action_homeFragment_to_navigation_bookmarks)
+            }
+        }
     }
 
 }
