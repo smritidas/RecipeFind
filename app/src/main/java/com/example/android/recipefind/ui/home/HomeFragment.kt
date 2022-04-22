@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.*
 import androidx.navigation.fragment.findNavController
 import com.example.android.recipefind.R
+import com.example.android.recipefind.data.api.RetrofitClient
+import kotlinx.coroutines.launch
 
 //TODO code up the buttons to point to other fragments
 //TODO Splash screen
@@ -46,8 +47,12 @@ class HomeFragment : Fragment(), View.OnClickListener{
         searchButton.setOnClickListener(this)
         bookmarksButton.setOnClickListener(this)
 
+
         return root
+
+
     }
+
 
     override fun onClick(view: View?) {
         when(view?.id){
@@ -60,7 +65,6 @@ class HomeFragment : Fragment(), View.OnClickListener{
             R.id.tv_saved_bookmarks -> {
                 findNavController().navigate(R.id.action_homeFragment_to_navigation_bookmarks)
             }
-        }
-    }
+        } } }
 
-}
+

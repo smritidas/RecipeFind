@@ -2,7 +2,11 @@ package com.example.android.recipefind.data.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-import com.google.gson.JsonObject
+
+@JsonClass(generateAdapter = true)
+data class RecipeResponse (
+    val hits : List<Hit>
+        )
 
 @JsonClass(generateAdapter = true)
 data class Hit (
@@ -65,3 +69,4 @@ data class Ingredient (
     @Json(name = "foodId")
     val foodID: String
 )
+
