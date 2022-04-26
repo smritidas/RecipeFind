@@ -50,7 +50,6 @@ class HomeFragment : Fragment(), View.OnClickListener{
 
         return root
 
-
     }
 
 
