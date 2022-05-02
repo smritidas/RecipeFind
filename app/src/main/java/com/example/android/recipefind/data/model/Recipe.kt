@@ -33,7 +33,8 @@ data class Recipe (
     val source: String,
     val url: String,
     val shareAs: String,
-    val yield: Long,
+    @Json(name = "yield")
+    val yieldAmount: Long,
     val dietLabels: List<String>,
     val healthLabels: List<String>,
     val cautions: List<String>,
