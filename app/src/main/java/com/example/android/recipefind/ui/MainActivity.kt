@@ -10,15 +10,13 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.android.recipefind.R
 
 
-//TODO check that all fragments are in correct order
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //val navView: BottomNavigationView? = findViewById(R.id.nav_view)
 
-        
     }
 }

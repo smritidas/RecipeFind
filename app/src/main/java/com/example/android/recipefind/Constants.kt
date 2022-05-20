@@ -2,6 +2,7 @@ package com.example.android.recipefind
 
 import android.os.Build
 
+//TODO Should these extras be deleted?
 object Constants {
 
     const val APP_KEY: String = BuildConfig.APP_KEY

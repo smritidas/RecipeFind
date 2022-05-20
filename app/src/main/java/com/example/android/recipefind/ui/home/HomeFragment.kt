@@ -16,18 +16,18 @@ import kotlinx.coroutines.launch
 //TODO code up the buttons to point to other fragments
 //TODO Splash screen
 
-class HomeFragment : Fragment(), View.OnClickListener{
+class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
 
         homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
 
@@ -43,27 +43,22 @@ class HomeFragment : Fragment(), View.OnClickListener{
         val searchButton = root.findViewById<Button>(R.id.tv_ingredient_search)
         val bookmarksButton = root.findViewById<Button>(R.id.tv_saved_bookmarks)
 
-        browseButton.setOnClickListener(this)
-        searchButton.setOnClickListener(this)
-        bookmarksButton.setOnClickListener(this)
+        browseButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_navigation_browse)
+        }
 
+        searchButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_navigation_search)
+        }
+
+        bookmarksButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_navigation_bookmarks)
+        }
 
         return root
 
     }
 
-
-    override fun onClick(view: View?) {
-        when(view?.id){
-            R.id.tv_browse_ideas -> {
-                findNavController().navigate(R.id.action_homeFragment_to_navigation_browse)
-            }
-            R.id.tv_ingredient_search -> {
-                findNavController().navigate(R.id.action_homeFragment_to_navigation_search)
-            }
-            R.id.tv_saved_bookmarks -> {
-                findNavController().navigate(R.id.action_homeFragment_to_navigation_bookmarks)
-            }
-        } } }
+}
 
 
