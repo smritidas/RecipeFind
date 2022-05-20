@@ -41,7 +41,7 @@ class HomeFragment : Fragment() {
         //TODO ViewBinding
         val browseButton = root.findViewById<Button>(R.id.tv_browse_ideas)
         val searchButton = root.findViewById<Button>(R.id.tv_ingredient_search)
-        val bookmarksButton = root.findViewById<Button>(R.id.tv_saved_bookmarks)
+        val savedButton = root.findViewById<Button>(R.id.tv_saved_bookmarks)
 
         browseButton.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_navigation_browse)
@@ -51,8 +51,8 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_navigation_search)
         }
 
-        bookmarksButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_navigation_bookmarks)
+        savedButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_navigation_saved)
         }
 
         return root
