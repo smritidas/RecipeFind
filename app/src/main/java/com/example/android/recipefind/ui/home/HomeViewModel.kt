@@ -9,7 +9,7 @@ import com.example.android.recipefind.data.api.RetrofitClient
 import kotlinx.coroutines.launch
 
 
-//TODO What goes in here?
+//TODO Remove success after BrowseViewModel works
 class HomeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
