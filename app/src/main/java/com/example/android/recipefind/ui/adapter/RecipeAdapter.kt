@@ -30,7 +30,6 @@ class RecipeAdapter(private val dataset: List<Recipe>) : RecyclerView.Adapter<Re
                 false)
         )
 
-
     }
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
