@@ -20,7 +20,7 @@ interface Dao {
     suspend fun delete(recipe: RecipeSaved)
 
     @Query("DELETE FROM saved_table")
-    suspend fun deleteAll()
+    fun deleteAll()
 
     @Query("SELECT * from saved_table ORDER BY name ASC")
     fun getAlphabetizedRecipes(): LiveData<List<Recipe>>

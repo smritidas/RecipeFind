@@ -6,6 +6,8 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import java.security.AccessControlContext
 
+//TODO Ask Database migration with room
+
 @Database(entities = [RecipeSaved::class], version = 1, exportSchema = false)
 abstract class RecipeDb: RoomDatabase() {
 
