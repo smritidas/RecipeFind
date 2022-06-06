@@ -10,8 +10,8 @@ class RecipeRepository(private val recipeDao: Dao) {
 
     val delete = recipeDao.deleteAll()
 
-    suspend fun addRecipe(recipe: RecipeSaved){
-        //What goes here?
+    suspend fun insert(recipe: RecipeSaved){
+    //  Dao.insert(recipe)
     }
 
 }
