@@ -29,7 +29,7 @@ class BrowseViewModel : ViewModel() {
     private fun getRecipes() {
         viewModelScope.launch{
             try {
-                val listResult = RetrofitClient.recipesApi.getRecipe()
+                val listResult = RetrofitClient.recipesApi.getRecipe("q")
                 _status.value = "Success! {${listResult.isSuccessful}}"
             } catch (e: Exception) {
                 _status.value = "Failure: ${e.message}"
