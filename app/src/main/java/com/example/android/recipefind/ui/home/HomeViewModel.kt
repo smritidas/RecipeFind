@@ -20,14 +20,14 @@ class HomeViewModel : ViewModel() {
     init {
 
 
-            viewModelScope.launch{
-                try {
-                    val listResult = RetrofitClient.recipesApi.getRecipe()
-                    Log.v("S" ,"Success! {${listResult.isSuccessful}}")
-                } catch (e: Exception) {
-                    Log.v("S","Failure: ${e.message}")
-                }
-            }
+//            viewModelScope.launch{
+//                try {
+//                    val listResult = RetrofitClient.recipesApi.getRecipe("q")
+//                    Log.v("S" ,"Success! {${listResult.isSuccessful}}")
+//                } catch (e: Exception) {
+//                    Log.v("S","Failure: ${e.message}")
+//                }
+//            }
 
     }
 }

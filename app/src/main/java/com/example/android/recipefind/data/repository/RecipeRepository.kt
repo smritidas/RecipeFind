@@ -8,5 +8,5 @@ Add error handling logic
  */
 class RecipeRepository(private val apiService: RecipeApiService) {
 
-    suspend fun getRecipes() = apiService.getRecipe()
+    suspend fun getRecipes() = apiService.getRecipe("q")
 }

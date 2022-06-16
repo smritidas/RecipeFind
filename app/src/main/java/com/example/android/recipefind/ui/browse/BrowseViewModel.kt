@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.android.recipefind.data.api.RecipeApiService
 import com.example.android.recipefind.data.api.RetrofitClient
+import com.example.android.recipefind.data.repository.RecipeRepository
 import kotlinx.coroutines.launch
 import kotlin.reflect.KProperty
 
@@ -15,10 +16,10 @@ import kotlin.reflect.KProperty
  */
 
 class BrowseViewModel : ViewModel() {
-//retrofit gets called here
-    //KTX co routine run time. Lifecycle viewmodel
-    //Coroutine view model
-    //error handling needs to be done here in MAIN REPO
+
+
+    //call buttons and on click
+
 
     // TODO The internal MutableLiveData that stores the status of the most recent request
     private val _status = MutableLiveData<String>()
