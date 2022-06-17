@@ -18,7 +18,7 @@ import kotlin.reflect.KProperty
 class BrowseViewModel : ViewModel() {
 
 
-    //call buttons and on click
+    //call buttons and on click here for button?
 
 
     // TODO The internal MutableLiveData that stores the status of the most recent request

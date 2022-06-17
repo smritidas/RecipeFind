@@ -5,11 +5,16 @@ import androidx.fragment.app.Fragment
 
 class BrowseFragment : Fragment() {
 
-//private val viewModel: BrowseViewModel by viewModel
+    // 1. make a call to the viewmodel
+    //private val viewModel: BrowseViewModel by viewModel
 
-    //on create view function
+    //2. call the viewmodel and observe
+    // viewModel.observe {state ->
+    // success -> then render the list
+    // error -> toast message
 
-    //recyclerview
+    //3. if success call this function
+    // renderSuccess call recyclerview
 
 
 }
