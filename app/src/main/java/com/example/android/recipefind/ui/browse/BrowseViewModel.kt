@@ -18,14 +18,12 @@ import kotlin.reflect.KProperty
 class BrowseViewModel : ViewModel() {
 
 
-    //call buttons and on click here for button?
-
-
     // TODO The internal MutableLiveData that stores the status of the most recent request
     private val _status = MutableLiveData<String>()
 
     // TODO The external immutable LiveData for the request status
     val status: LiveData<String> = _status
+
 
     private fun getRecipes() {
         viewModelScope.launch{
@@ -37,4 +35,6 @@ class BrowseViewModel : ViewModel() {
             }
         }
     }
+
+    //then I need to write a function so that I can tell the fragment what to show?
 }

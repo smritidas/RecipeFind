@@ -34,9 +34,10 @@ class RecipeAdapter(private val dataset: List<Recipe>) : RecyclerView.Adapter<Re
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
         val recipe = dataset[position]
-
     }
 
     override fun getItemCount() = dataset.size
+
+//update the list with new data?
 
 }
