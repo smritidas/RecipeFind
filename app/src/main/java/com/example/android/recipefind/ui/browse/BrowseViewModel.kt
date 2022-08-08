@@ -10,10 +10,6 @@ import com.example.android.recipefind.data.repository.RecipeRepository
 import kotlinx.coroutines.launch
 import kotlin.reflect.KProperty
 
-/**
- * Viewmodels don't contain references to the view
- *
- */
 
 class BrowseViewModel : ViewModel() {
 
@@ -23,7 +19,8 @@ class BrowseViewModel : ViewModel() {
 
     // TODO The external immutable LiveData for the request status
     val status: LiveData<String> = _status
-
+    //create ui state model in the viewmodel
+    //create a sealed class
 
     private fun getRecipes() {
         viewModelScope.launch{
