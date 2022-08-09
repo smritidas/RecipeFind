@@ -31,7 +31,7 @@ class BrowseFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val view =
+        val view = root // what am i returning?
 
         // setup views by making a call to list
         listView = view?.findViewById() ?:
@@ -49,16 +49,18 @@ class BrowseFragment : Fragment() {
             UIState.ERROR -> Toast.makeText("error").show()
             )
 
-        })
 
+        })
+        }
 
 
 //return the view
 
-        }
+    private fun updateView(list: List<String>) {
+       //TODO adapter.swapNewData(list)
+        adapter.notifyDataSetChanged()
 
-        private fun updateView(list: List<String>) {
-        //Send new data to adapter and re-render
-        adapter.swapNewData(list)
-        adapter.notifyDatasetChanged
-}}
+    }
+
+}
+
