@@ -1,10 +1,16 @@
 package com.example.android.recipefind.ui.browse
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.inflate
 import android.view.ViewGroup
 import android.widget.LinearLayout.VERTICAL
+import androidx.appcompat.resources.Compatibility.Api21Impl.inflate
+import androidx.core.content.res.ColorStateListInflaterCompat.inflate
+import androidx.core.content.res.ComplexColorCompat.inflate
+import androidx.core.graphics.drawable.DrawableCompat.inflate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -30,37 +36,30 @@ class BrowseFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val view = LayoutInflater.inflate(R.layout.fragment_browse,context, false)
 
-        val view = root // what am i returning?
-
-        // setup views by making a call to list
-        listView = view?.findViewById() ?:
+        //TODO check the right recyclerview is being called
+        listView = (view?.findViewById() ?: R.id.recyclerView) as RecyclerView
 
         // instantiate with empty list
         val adapter = RecipeAdapter(listOf())
 
-        listView.layoutManager = LinearLayoutManager(VERTICAL) //look up what this belongs to
+        listView.layoutManager = LinearLayoutManager(this)
+        listView.orientation = LinearLayoutManager.VERTICAL
+
         listView.adapter = adapter
 
 
         //Set observer on viewmodel, do something each time the observer updates
-        viewModel.uiState.observe(viewLifecycleOwner, Observer {state ->
-            UIState.SUCCESS -> updateView(state.list)
-            UIState.ERROR -> Toast.makeText("error").show()
-            )
-
-
+        viewModel.State.observe(viewLifecycleOwner, Observer { State ->
+            State.Success -> updateView(state.list)
+            State.Error -> Toast.makeText("error").show()
         })
-        }
 
-
-//return the view
-
-    private fun updateView(list: List<String>) {
-       //TODO adapter.swapNewData(list)
-        adapter.notifyDataSetChanged()
+        return view
 
     }
+
 
 }
 

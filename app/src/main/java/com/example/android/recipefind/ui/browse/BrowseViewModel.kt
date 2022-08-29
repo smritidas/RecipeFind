@@ -26,12 +26,16 @@ class BrowseViewModel : ViewModel() {
         viewModelScope.launch{
             try {
                 val listResult = RetrofitClient.recipesApi.getRecipe("q")
-                _status.value = "Success! {${listResult.isSuccessful}}"
+                State.Success = "Success! {${listResult.isSuccessful}}"
             } catch (e: Exception) {
-                _status.value = "Failure: ${e.message}"
+                State.Failure = "Failure: ${e.message}"
             }
         }
     }
 
-    //then I need to write a function so that I can tell the fragment what to show?
+    sealed class State {
+        data class Success (val state: String)
+        data class Failure (val state: String)
+    }
+
 }
